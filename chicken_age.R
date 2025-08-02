@@ -1,4 +1,4 @@
-library("lubridate")
+suppressPackageStartupMessages(library("lubridate"))
 tz <- "America/Los_Angeles"
 birthdate <- ymd("2025-3-15", tz = tz)
 age <- as.numeric(difftime(now(tz), birthdate, units = "weeks"))
